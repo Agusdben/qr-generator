@@ -1,12 +1,11 @@
 import QRCode from 'qrcode'
 import { getCssVariable } from './utiles'
 import './style.css'
-
+import 'normalize.css'
 const setAnchorDownload = downloadLink => {
   const anchor = document.getElementById('qr-download')
   anchor.setAttribute('download', 'QR')
   anchor.href = downloadLink
-  return anchor
 }
 
 const setQRImage = async str => {
