@@ -2,6 +2,10 @@
   --primary-color: #3ca93c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: radial-gradient(#222, #000);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,6 +43,7 @@ a {
   display: grid;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
   grid-template-rows: 1fr 100px;
   grid-template-areas:
     "main"
