@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Generator</title>
+</head>
+
+<body>
+  <div class="app">
+    <main class="app__main">
+      <form id="qr-form" class="qr-form">
+        <input id="input-qr" class="qr-form__input" type="text" required autocomplete="off">
+
+        <div class="qr-form__group">
+          <label for="color-light" class="qr-form__label">Background color</label>
+          <input name="color-light" id="input-color-light" type="color" value="#000000">
+        </div>
+
+        <div class="qr-form__group">
+          <label for="color-dark" class="qr-form__label">QR color</label>
+          <input name="color-dark" id="input-color-dark" type="color">
+        </div>
+
+        <button id="generate-qr-btn" class="qr-form__submit btn" type="submit">Generate!</button>
+      </form>
+
+      <section id="qr-output" class="qr-output">
+        <img id="qr-img" class="qr-output__img">
+        <a id="qr-download" class="qr-output__download btn">
+          <span>💾</span>
+          <span>Save</span>
+        </a>
+      </section>
+
+    </main>
+    <footer class="app__footer">
+      <section>
+        <span>Created by Agustin Di Benedetto</span>
+      </section>
+      <section>
+        <a class="app__footer__link" href="https://www.linkedin.com/in/agustin-di-benedetto-7509071ba/" target="_blank"
+          rel="noreferer">Linkedin</a>
+        <span>|</span>
+        <a class="app__footer__link" href="https://github.com/Agusdben" target="_blank" rel="noreferer">Github</a>
+      </section>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
